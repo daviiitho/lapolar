@@ -1,3 +1,4 @@
 requests 
 BeautifulSoup4
 PyMySQL
+mysql-connector-python
