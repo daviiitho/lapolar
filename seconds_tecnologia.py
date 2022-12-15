@@ -168,8 +168,8 @@ for row in a:
                         link2 = "[VER PRODUCTO]"+ "("+link_soico_final+")"
 
                         fecha_actualizacion = datetime.today().strftime('%Y-%m-%d %H:%M')
-                        print ('UPDATE tecnologia_details SET oferta="%s", titulo="%s", porcentaje="%s", fecha_actualizacion="%s"  where urls="%s" '%(ofertaurlcompara.strip(),titulolimpio.strip(),porcentaje.strip(), fecha_actualizacion,link))
-                        cur.execute('UPDATE tecnologia_details SET oferta="%s", titulo="%s", porcentaje="%s", fecha_actualizacion="%s"  where urls="%s" '%(ofertaurlcompara.strip(),titulolimpio.strip(),porcentaje.strip(), fecha_actualizacion,link))
+                        print ('UPDATE tecnologia_details SET oferta="%s", titulo="%s", porcentaje="%s", fecha_actualizacion="%s"  where urls="%s" ;'%(ofertaurlcompara.strip(),titulolimpio.strip(),porcentaje.strip(), fecha_actualizacion,link))
+                        cur.execute('UPDATE tecnologia_details SET oferta="%s", titulo="%s", porcentaje="%s", fecha_actualizacion="%s"  where urls="%s"; '%(ofertaurlcompara.strip(),titulolimpio.strip(),porcentaje.strip(), fecha_actualizacion,link))
                         db.commit()
                         #test1 = telegram_bot_sendtext(f" ¡ATENCION! Hay oferta, \n{(titulolimpio.strip())} \nEsta con {(porcentaje.strip())}% de descuento. \nPrecio Oferta:  {'$'+str(ofertaurlcompara.strip())}\nEnlace: \U0001F449 {(link2)}")
                         #test = telegram_bot_sendtext_tecnologia(f" ¡ATENCION! Hay oferta, \n{(titulolimpio.strip())} \nEsta con {(porcentaje.strip())}% de descuento. \nPrecio Oferta:  {'$'+str(ofertaurlcompara.strip())}\nEnlace: \U0001F449 {(link2)}")
