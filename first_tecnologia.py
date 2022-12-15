@@ -9,7 +9,7 @@ import mysql.connector
 
 
 #db = mysql.connector.connect(host="34.176.191.95", user="root", passwd="Davito1989.", database ="paris")
-db = mysql.connector.connect(host="us-east.connect.psdb.cloud", user="qkm6zjfks9eljiukkmw1", passwd="pscale_pw_Gm2pbWgW5axkB5GkJ9meVDed69O5z7vszEiglGie8GU", database ="lapolar")
+db = mysql.connector.connect(host="us-east.connect.psdb.cloud", user="vwjfmxun7buzeuk5px01", passwd="pscale_pw_XrvgzN4FOOYMIOb91wprgb1IgAAbRh0dL06HzHEnfz9", database ="lapolar")
 
 # cursor to read the query results
 cur = db.cursor()
