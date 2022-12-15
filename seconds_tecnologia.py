@@ -64,6 +64,7 @@ cur = db.cursor()
 #this is the format of forming and executing queries using mySQLdb , see documentation in 'readme' file for further knowledge
 query="select urls,status, oferta from tecnologia_details"
 #executing query with the cursor
+print(query)
 cur.execute(query)
 a=cur.fetchall()
 for row in a:
