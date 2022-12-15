@@ -55,7 +55,9 @@ def telegram_bot_sendtext_tecnologia(bot_message):
             return response.json()      
 
 #connecting to the db with default values and table created
-db = mysql.connector.connect(host="localhost", user="root", passwd="", database ="lapolar")
+#db = mysql.connector.connect(host="localhost", user="root", passwd="", database ="lapolar")
+db = mysql.connector.connect(host="us-east.connect.psdb.cloud", user="vwjfmxun7buzeuk5px01", passwd="pscale_pw_XrvgzN4FOOYMIOb91wprgb1IgAAbRh0dL06HzHEnfz9", database ="lapolar")
+
 #db = mysql.connector.connect(host="34.176.191.95", user="root", passwd="Davito1989.", database ="paris")
 #cursor to read the query results
 cur = db.cursor()
@@ -169,8 +171,8 @@ for row in a:
                         print ('UPDATE tecnologia_details SET oferta="%s", titulo="%s", porcentaje="%s", fecha_actualizacion="%s"  where urls="%s" '%(ofertaurlcompara.strip(),titulolimpio.strip(),porcentaje.strip(), fecha_actualizacion,link2))
                         cur.execute('UPDATE tecnologia_details SET oferta="%s", titulo="%s", porcentaje="%s", fecha_actualizacion="%s"  where urls="%s" '%(ofertaurlcompara.strip(),titulolimpio.strip(),porcentaje.strip(), fecha_actualizacion,link))
                         db.commit()
-                        test1 = telegram_bot_sendtext(f" ¡ATENCION! Hay oferta, \n{(titulolimpio.strip())} \nEsta con {(porcentaje.strip())}% de descuento. \nPrecio Oferta:  {'$'+str(ofertaurlcompara.strip())}\nEnlace: \U0001F449 {(link2)}")
-                        test = telegram_bot_sendtext_tecnologia(f" ¡ATENCION! Hay oferta, \n{(titulolimpio.strip())} \nEsta con {(porcentaje.strip())}% de descuento. \nPrecio Oferta:  {'$'+str(ofertaurlcompara.strip())}\nEnlace: \U0001F449 {(link2)}")
+                        #test1 = telegram_bot_sendtext(f" ¡ATENCION! Hay oferta, \n{(titulolimpio.strip())} \nEsta con {(porcentaje.strip())}% de descuento. \nPrecio Oferta:  {'$'+str(ofertaurlcompara.strip())}\nEnlace: \U0001F449 {(link2)}")
+                        #test = telegram_bot_sendtext_tecnologia(f" ¡ATENCION! Hay oferta, \n{(titulolimpio.strip())} \nEsta con {(porcentaje.strip())}% de descuento. \nPrecio Oferta:  {'$'+str(ofertaurlcompara.strip())}\nEnlace: \U0001F449 {(link2)}")
 
                    
                 
