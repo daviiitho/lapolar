@@ -56,7 +56,7 @@ def telegram_bot_sendtext_tecnologia(bot_message):
 
 #connecting to the db with default values and table created
 #db = mysql.connector.connect(host="localhost", user="root", passwd="", database ="lapolar")
-db = mysql.connector.connect(host="us-east.connect.psdb.cloud", user="vwjfmxun7buzeuk5px01", passwd="pscale_pw_XrvgzN4FOOYMIOb91wprgb1IgAAbRh0dL06HzHEnfz9", database ="lapolar")
+db = mysql.connector.connect(host="lapolar.cnh6u52zzc0v.us-east-1.rds.amazonaws.com", user="admin", passwd="Davito1989", database ="lapolar")
 
 #db = mysql.connector.connect(host="34.176.191.95", user="root", passwd="Davito1989.", database ="paris")
 #cursor to read the query results
