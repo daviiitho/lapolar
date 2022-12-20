@@ -9,7 +9,8 @@ import mysql.connector
 
 
 #db = mysql.connector.connect(host="34.176.191.95", user="root", passwd="Davito1989.", database ="paris")
-db = mysql.connector.connect(host="localhost", user="root", passwd="", database ="lapolar")
+db = mysql.connector.connect(host="lapolar.cnh6u52zzc0v.us-east-1.rds.amazonaws.com", user="admin", passwd="Davito1989", database ="lapolar")
+
 
 # cursor to read the query results
 cur = db.cursor()
