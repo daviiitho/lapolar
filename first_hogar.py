@@ -20,7 +20,7 @@ cur = db.cursor()
 #cur.execute(query)
  
 pagina = 0
-while pagina <= 1800:
+while pagina <= 1080:
 #se especifica catagoria de television
  url = "https://www.lapolar.cl/hogar/?start=%s&sz=36"%pagina
  #print(url)
