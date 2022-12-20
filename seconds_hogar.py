@@ -168,8 +168,8 @@ for row in a:
                         print ('UPDATE hogar_details SET oferta="%s", titulo="%s", porcentaje="%s", fecha_actualizacion="%s"  where urls="%s" '%(ofertaurlcompara.strip(),titulolimpio.strip(),porcentaje.strip(), fecha_actualizacion,link))
                         cur.execute('UPDATE hogar_details SET oferta="%s", titulo="%s", porcentaje="%s", fecha_actualizacion="%s"  where urls="%s" '%(ofertaurlcompara.strip(),titulolimpio.strip(),porcentaje.strip(), fecha_actualizacion,link))
                         db.commit()
-                        #test1 = telegram_bot_sendtext(f" ¡ATENCION! Hay oferta, \n{(titulolimpio.strip())} \nEsta con {(porcentaje.strip())}% de descuento. \nPrecio Oferta:  {'$'+str(ofertaurlcompara.strip())}\nEnlace: \U0001F449 {(link2)}")
-                        #test = telegram_bot_sendtext_hogar(f" ¡ATENCION! Hay oferta, \n{(titulolimpio.strip())} \nEsta con {(porcentaje.strip())}% de descuento. \nPrecio Oferta:  {'$'+str(ofertaurlcompara.strip())}\nEnlace: \U0001F449 {(link2)}")
+                        test1 = telegram_bot_sendtext(f" ¡ATENCION! Hay oferta, \n{(titulolimpio.strip())} \nEsta con {(porcentaje.strip())}% de descuento. \nPrecio Oferta:  {'$'+str(ofertaurlcompara.strip())}\nEnlace: \U0001F449 {(link2)}")
+                        test = telegram_bot_sendtext_hogar(f" ¡ATENCION! Hay oferta, \n{(titulolimpio.strip())} \nEsta con {(porcentaje.strip())}% de descuento. \nPrecio Oferta:  {'$'+str(ofertaurlcompara.strip())}\nEnlace: \U0001F449 {(link2)}")
 
                    
                 
